@@ -1,0 +1,161 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "data": [
+    {
+      "name": "source_0",
+      "values": [
+        {
+          "inv_amount_end": 8.38,
+          "inv_amount_start": 4.73,
+          "inv_amt": "$3.65B",
+          "measure": "Federal funds"
+        },
+        {
+          "inv_amount_end": 4.73,
+          "inv_amount_start": 0.0,
+          "inv_amt": "$4.73B",
+          "measure": "Community development funds"
+        },
+        {
+          "inv_amount_end": 236.01,
+          "inv_amount_start": 226.88,
+          "inv_amt": "$9.13B",
+          "measure": "Small-business loans"
+        },
+        {
+          "inv_amount_end": 121.77,
+          "inv_amount_start": 8.379999999999995,
+          "inv_amt": "$113.39B",
+          "measure": "Non-residential investment"
+        },
+        {
+          "inv_amount_end": 226.88,
+          "inv_amount_start": 143.18,
+          "inv_amt": "$83.70B",
+          "measure": "Purchase loans (SF units)"
+        },
+        {
+          "inv_amount_end": 143.18,
+          "inv_amount_start": 121.77000000000001,
+          "inv_amt": "$21.41B",
+          "measure": "Purchase loans (MF units)"
+        }
+      ]
+    },
+    {
+      "name": "source_0_color_domain_measure",
+      "values": [
+        {
+          "measure": "Federal funds"
+        },
+        {
+          "measure": "Community development funds"
+        },
+        {
+          "measure": "Small-business loans"
+        },
+        {
+          "measure": "Non-residential investment"
+        },
+        {
+          "measure": "Purchase loans (SF units)"
+        },
+        {
+          "measure": "Purchase loans (MF units)"
+        }
+      ]
+    }
+  ],
+  "height": 300,
+  "legends": [
+    {
+      "fill": "color",
+      "symbolType": "circle",
+      "title": "Investment Category"
+    }
+  ],
+  "marks": [
+    {
+      "encode": {
+        "update": {
+          "endAngle": {
+            "field": "inv_amount_start",
+            "scale": "theta"
+          },
+          "fill": {
+            "field": "measure",
+            "scale": "color"
+          },
+          "innerRadius": {
+            "value": 90
+          },
+          "outerRadius": {
+            "signal": "min(width,height)/2"
+          },
+          "startAngle": {
+            "field": "inv_amount_end",
+            "scale": "theta"
+          },
+          "tooltip": {
+            "signal": "{\"Investment Type\": isValid(datum[\"measure\"]) ? datum[\"measure\"] : \"\"+datum[\"measure\"], \"Amount\": isValid(datum[\"inv_amt\"]) ? datum[\"inv_amt\"] : \"\"+datum[\"inv_amt\"]}"
+          },
+          "x": {
+            "mult": 0.5,
+            "signal": "width"
+          },
+          "y": {
+            "mult": 0.5,
+            "signal": "height"
+          }
+        }
+      },
+      "from": {
+        "data": "source_0"
+      },
+      "name": "marks",
+      "style": [
+        "arc"
+      ],
+      "type": "arc"
+    }
+  ],
+  "padding": 5,
+  "scales": [
+    {
+      "domain": {
+        "data": "source_0",
+        "fields": [
+          "inv_amount_start",
+          "inv_amount_end"
+        ]
+      },
+      "name": "theta",
+      "range": [
+        0,
+        6.283185307179586
+      ],
+      "type": "linear",
+      "zero": true
+    },
+    {
+      "domain": {
+        "data": "source_0_color_domain_measure",
+        "field": "measure",
+        "sort": true
+      },
+      "name": "color",
+      "range": [
+        "#CE94E6",
+        "#7DB583",
+        "#E07B7B",
+        "#FFC857",
+        "#3B5268",
+        "#7BAEE0"
+      ],
+      "type": "ordinal"
+    }
+  ],
+  "style": "view",
+  "width": 300
+}

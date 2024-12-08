@@ -1,0 +1,1747 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "axes": [
+    {
+      "aria": false,
+      "domain": false,
+      "grid": true,
+      "gridScale": "y",
+      "labels": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "orient": "bottom",
+      "scale": "x",
+      "tickCount": {
+        "signal": "ceil(width/40)"
+      },
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "aria": false,
+      "domain": false,
+      "grid": true,
+      "gridScale": "x",
+      "labels": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "orient": "left",
+      "scale": "y",
+      "tickCount": {
+        "signal": "ceil(height/40)"
+      },
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "grid": false,
+      "labelFlush": true,
+      "labelOverlap": true,
+      "orient": "bottom",
+      "scale": "x",
+      "tickCount": {
+        "signal": "ceil(width/40)"
+      },
+      "title": "Year",
+      "zindex": 0
+    },
+    {
+      "grid": false,
+      "labelOverlap": true,
+      "orient": "left",
+      "scale": "y",
+      "tickCount": {
+        "signal": "ceil(height/40)"
+      },
+      "title": "Investment amount (USD, per scalar unit)",
+      "zindex": 0
+    }
+  ],
+  "background": "white",
+  "data": [
+    {
+      "name": "param_9_store"
+    },
+    {
+      "name": "source_0",
+      "transform": [
+        {
+          "as": "year",
+          "expr": "toDate(datum['year'])",
+          "type": "formula"
+        }
+      ],
+      "values": [
+        {
+          "inv_amount": 10722.09,
+          "measure": "Aggregate investment",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 9930.57,
+          "measure": "Aggregate investment",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 13627.86,
+          "measure": "Aggregate investment",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 21629.26,
+          "measure": "Aggregate investment",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 23095.02,
+          "measure": "Aggregate investment",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 24672.57,
+          "measure": "Aggregate investment",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 24812.8,
+          "measure": "Aggregate investment",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 25766.77,
+          "measure": "Aggregate investment",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 26418.02,
+          "measure": "Aggregate investment",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 24298.28,
+          "measure": "Aggregate investment",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 20608.18,
+          "measure": "Aggregate investment",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 291.6,
+          "measure": "Federal funds",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 553.07,
+          "measure": "Federal funds",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 491.83,
+          "measure": "Federal funds",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 262.41,
+          "measure": "Federal funds",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 134.56,
+          "measure": "Federal funds",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 204.62,
+          "measure": "Federal funds",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 176.61,
+          "measure": "Federal funds",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 138.77,
+          "measure": "Federal funds",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 128.33,
+          "measure": "Federal funds",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 553.23,
+          "measure": "Federal funds",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 552.64,
+          "measure": "Federal funds",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 356.13,
+          "measure": "Community development funds",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 494.49,
+          "measure": "Community development funds",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 461.36,
+          "measure": "Community development funds",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 361.41,
+          "measure": "Community development funds",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 423.82,
+          "measure": "Community development funds",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 619.26,
+          "measure": "Community development funds",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 415.06,
+          "measure": "Community development funds",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 224.77,
+          "measure": "Community development funds",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 507.27,
+          "measure": "Community development funds",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 378.97,
+          "measure": "Community development funds",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 276.78,
+          "measure": "Community development funds",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4067.48,
+          "measure": "Small-business loans",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4333.75,
+          "measure": "Small-business loans",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 5193.47,
+          "measure": "Small-business loans",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 5051.03,
+          "measure": "Small-business loans",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4760.92,
+          "measure": "Small-business loans",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4585.96,
+          "measure": "Small-business loans",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4709.69,
+          "measure": "Small-business loans",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4974.88,
+          "measure": "Small-business loans",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4912.85,
+          "measure": "Small-business loans",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 5320.83,
+          "measure": "Small-business loans",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6804.45,
+          "measure": "Small-business loans",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 2893.46,
+          "measure": "Non-residential investment",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 3003.94,
+          "measure": "Non-residential investment",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4685.68,
+          "measure": "Non-residential investment",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 10229.12,
+          "measure": "Non-residential investment",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 11258.28,
+          "measure": "Non-residential investment",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 10370.56,
+          "measure": "Non-residential investment",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 9834.13,
+          "measure": "Non-residential investment",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 10649.32,
+          "measure": "Non-residential investment",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 12958.73,
+          "measure": "Non-residential investment",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 11149.78,
+          "measure": "Non-residential investment",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6591.87,
+          "measure": "Non-residential investment",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 12682.41,
+          "measure": "Purchase loans (SF units)",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 9204.19,
+          "measure": "Purchase loans (SF units)",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 11409.3,
+          "measure": "Purchase loans (SF units)",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 15805.21,
+          "measure": "Purchase loans (SF units)",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 15992.61,
+          "measure": "Purchase loans (SF units)",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 18286.24,
+          "measure": "Purchase loans (SF units)",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 19553.18,
+          "measure": "Purchase loans (SF units)",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 19932.19,
+          "measure": "Purchase loans (SF units)",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 18035.46,
+          "measure": "Purchase loans (SF units)",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 17582.79,
+          "measure": "Purchase loans (SF units)",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 18964.38,
+          "measure": "Purchase loans (SF units)",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 1265.65,
+          "measure": "Purchase loans (MF units)",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 1710.54,
+          "measure": "Purchase loans (MF units)",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 3539.64,
+          "measure": "Purchase loans (MF units)",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4092.6,
+          "measure": "Purchase loans (MF units)",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4572.36,
+          "measure": "Purchase loans (MF units)",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6612.56,
+          "measure": "Purchase loans (MF units)",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6961.26,
+          "measure": "Purchase loans (MF units)",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6751.29,
+          "measure": "Purchase loans (MF units)",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 3264.9,
+          "measure": "Purchase loans (MF units)",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 2670.33,
+          "measure": "Purchase loans (MF units)",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 2293.76,
+          "measure": "Purchase loans (MF units)",
+          "year": "2020-01-01T00:00:00.000"
+        }
+      ]
+    },
+    {
+      "name": "data_0",
+      "transform": [
+        {
+          "as": "year",
+          "expr": "toDate(datum['year'])",
+          "type": "formula"
+        }
+      ],
+      "values": [
+        {
+          "inv_amount": 10722.09,
+          "measure": "Aggregate investment",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 9930.57,
+          "measure": "Aggregate investment",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 13627.86,
+          "measure": "Aggregate investment",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 21629.26,
+          "measure": "Aggregate investment",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 23095.02,
+          "measure": "Aggregate investment",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 24672.57,
+          "measure": "Aggregate investment",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 24812.8,
+          "measure": "Aggregate investment",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 25766.77,
+          "measure": "Aggregate investment",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 26418.02,
+          "measure": "Aggregate investment",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 24298.28,
+          "measure": "Aggregate investment",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 20608.18,
+          "measure": "Aggregate investment",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 291.6,
+          "measure": "Federal funds",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 553.07,
+          "measure": "Federal funds",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 491.83,
+          "measure": "Federal funds",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 262.41,
+          "measure": "Federal funds",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 134.56,
+          "measure": "Federal funds",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 204.62,
+          "measure": "Federal funds",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 176.61,
+          "measure": "Federal funds",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 138.77,
+          "measure": "Federal funds",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 128.33,
+          "measure": "Federal funds",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 553.23,
+          "measure": "Federal funds",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 552.64,
+          "measure": "Federal funds",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 356.13,
+          "measure": "Community development funds",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 494.49,
+          "measure": "Community development funds",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 461.36,
+          "measure": "Community development funds",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 361.41,
+          "measure": "Community development funds",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 423.82,
+          "measure": "Community development funds",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 619.26,
+          "measure": "Community development funds",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 415.06,
+          "measure": "Community development funds",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 224.77,
+          "measure": "Community development funds",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 507.27,
+          "measure": "Community development funds",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 378.97,
+          "measure": "Community development funds",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 276.78,
+          "measure": "Community development funds",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4067.48,
+          "measure": "Small-business loans",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4333.75,
+          "measure": "Small-business loans",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 5193.47,
+          "measure": "Small-business loans",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 5051.03,
+          "measure": "Small-business loans",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4760.92,
+          "measure": "Small-business loans",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4585.96,
+          "measure": "Small-business loans",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4709.69,
+          "measure": "Small-business loans",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4974.88,
+          "measure": "Small-business loans",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4912.85,
+          "measure": "Small-business loans",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 5320.83,
+          "measure": "Small-business loans",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6804.45,
+          "measure": "Small-business loans",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 2893.46,
+          "measure": "Non-residential investment",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 3003.94,
+          "measure": "Non-residential investment",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4685.68,
+          "measure": "Non-residential investment",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 10229.12,
+          "measure": "Non-residential investment",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 11258.28,
+          "measure": "Non-residential investment",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 10370.56,
+          "measure": "Non-residential investment",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 9834.13,
+          "measure": "Non-residential investment",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 10649.32,
+          "measure": "Non-residential investment",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 12958.73,
+          "measure": "Non-residential investment",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 11149.78,
+          "measure": "Non-residential investment",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6591.87,
+          "measure": "Non-residential investment",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 12682.41,
+          "measure": "Purchase loans (SF units)",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 9204.19,
+          "measure": "Purchase loans (SF units)",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 11409.3,
+          "measure": "Purchase loans (SF units)",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 15805.21,
+          "measure": "Purchase loans (SF units)",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 15992.61,
+          "measure": "Purchase loans (SF units)",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 18286.24,
+          "measure": "Purchase loans (SF units)",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 19553.18,
+          "measure": "Purchase loans (SF units)",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 19932.19,
+          "measure": "Purchase loans (SF units)",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 18035.46,
+          "measure": "Purchase loans (SF units)",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 17582.79,
+          "measure": "Purchase loans (SF units)",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 18964.38,
+          "measure": "Purchase loans (SF units)",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 1265.65,
+          "measure": "Purchase loans (MF units)",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 1710.54,
+          "measure": "Purchase loans (MF units)",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 3539.64,
+          "measure": "Purchase loans (MF units)",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4092.6,
+          "measure": "Purchase loans (MF units)",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4572.36,
+          "measure": "Purchase loans (MF units)",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6612.56,
+          "measure": "Purchase loans (MF units)",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6961.26,
+          "measure": "Purchase loans (MF units)",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6751.29,
+          "measure": "Purchase loans (MF units)",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 3264.9,
+          "measure": "Purchase loans (MF units)",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 2670.33,
+          "measure": "Purchase loans (MF units)",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 2293.76,
+          "measure": "Purchase loans (MF units)",
+          "year": "2020-01-01T00:00:00.000"
+        }
+      ]
+    },
+    {
+      "name": "data_1",
+      "source": "source_0",
+      "transform": [
+        {
+          "expr": "length(data(\"param_9_store\")) && vlSelectionTest(\"param_9_store\", datum)",
+          "type": "filter"
+        },
+        {
+          "expr": "(isDate(datum[\"year\"]) || (isValid(datum[\"year\"]) && isFinite(+datum[\"year\"])))",
+          "type": "filter"
+        },
+        {
+          "fields": [
+            "year"
+          ],
+          "type": "project"
+        }
+      ]
+    },
+    {
+      "name": "data_2",
+      "transform": [
+        {
+          "as": "year",
+          "expr": "toDate(datum['year'])",
+          "type": "formula"
+        }
+      ],
+      "values": [
+        {
+          "inv_amount": 10722.09,
+          "measure": "Aggregate investment",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 9930.57,
+          "measure": "Aggregate investment",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 13627.86,
+          "measure": "Aggregate investment",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 21629.26,
+          "measure": "Aggregate investment",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 23095.02,
+          "measure": "Aggregate investment",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 24672.57,
+          "measure": "Aggregate investment",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 24812.8,
+          "measure": "Aggregate investment",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 25766.77,
+          "measure": "Aggregate investment",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 26418.02,
+          "measure": "Aggregate investment",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 24298.28,
+          "measure": "Aggregate investment",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 20608.18,
+          "measure": "Aggregate investment",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 291.6,
+          "measure": "Federal funds",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 553.07,
+          "measure": "Federal funds",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 491.83,
+          "measure": "Federal funds",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 262.41,
+          "measure": "Federal funds",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 134.56,
+          "measure": "Federal funds",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 204.62,
+          "measure": "Federal funds",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 176.61,
+          "measure": "Federal funds",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 138.77,
+          "measure": "Federal funds",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 128.33,
+          "measure": "Federal funds",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 553.23,
+          "measure": "Federal funds",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 552.64,
+          "measure": "Federal funds",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 356.13,
+          "measure": "Community development funds",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 494.49,
+          "measure": "Community development funds",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 461.36,
+          "measure": "Community development funds",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 361.41,
+          "measure": "Community development funds",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 423.82,
+          "measure": "Community development funds",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 619.26,
+          "measure": "Community development funds",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 415.06,
+          "measure": "Community development funds",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 224.77,
+          "measure": "Community development funds",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 507.27,
+          "measure": "Community development funds",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 378.97,
+          "measure": "Community development funds",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 276.78,
+          "measure": "Community development funds",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4067.48,
+          "measure": "Small-business loans",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4333.75,
+          "measure": "Small-business loans",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 5193.47,
+          "measure": "Small-business loans",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 5051.03,
+          "measure": "Small-business loans",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4760.92,
+          "measure": "Small-business loans",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4585.96,
+          "measure": "Small-business loans",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4709.69,
+          "measure": "Small-business loans",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4974.88,
+          "measure": "Small-business loans",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4912.85,
+          "measure": "Small-business loans",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 5320.83,
+          "measure": "Small-business loans",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6804.45,
+          "measure": "Small-business loans",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 2893.46,
+          "measure": "Non-residential investment",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 3003.94,
+          "measure": "Non-residential investment",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4685.68,
+          "measure": "Non-residential investment",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 10229.12,
+          "measure": "Non-residential investment",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 11258.28,
+          "measure": "Non-residential investment",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 10370.56,
+          "measure": "Non-residential investment",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 9834.13,
+          "measure": "Non-residential investment",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 10649.32,
+          "measure": "Non-residential investment",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 12958.73,
+          "measure": "Non-residential investment",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 11149.78,
+          "measure": "Non-residential investment",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6591.87,
+          "measure": "Non-residential investment",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 12682.41,
+          "measure": "Purchase loans (SF units)",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 9204.19,
+          "measure": "Purchase loans (SF units)",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 11409.3,
+          "measure": "Purchase loans (SF units)",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 15805.21,
+          "measure": "Purchase loans (SF units)",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 15992.61,
+          "measure": "Purchase loans (SF units)",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 18286.24,
+          "measure": "Purchase loans (SF units)",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 19553.18,
+          "measure": "Purchase loans (SF units)",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 19932.19,
+          "measure": "Purchase loans (SF units)",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 18035.46,
+          "measure": "Purchase loans (SF units)",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 17582.79,
+          "measure": "Purchase loans (SF units)",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 18964.38,
+          "measure": "Purchase loans (SF units)",
+          "year": "2020-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 1265.65,
+          "measure": "Purchase loans (MF units)",
+          "year": "2010-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 1710.54,
+          "measure": "Purchase loans (MF units)",
+          "year": "2011-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 3539.64,
+          "measure": "Purchase loans (MF units)",
+          "year": "2012-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4092.6,
+          "measure": "Purchase loans (MF units)",
+          "year": "2013-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 4572.36,
+          "measure": "Purchase loans (MF units)",
+          "year": "2014-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6612.56,
+          "measure": "Purchase loans (MF units)",
+          "year": "2015-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6961.26,
+          "measure": "Purchase loans (MF units)",
+          "year": "2016-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 6751.29,
+          "measure": "Purchase loans (MF units)",
+          "year": "2017-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 3264.9,
+          "measure": "Purchase loans (MF units)",
+          "year": "2018-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 2670.33,
+          "measure": "Purchase loans (MF units)",
+          "year": "2019-01-01T00:00:00.000"
+        },
+        {
+          "inv_amount": 2293.76,
+          "measure": "Purchase loans (MF units)",
+          "year": "2020-01-01T00:00:00.000"
+        }
+      ]
+    },
+    {
+      "name": "source_0_color_domain_measure_0",
+      "values": [
+        {
+          "measure": "Aggregate investment"
+        },
+        {
+          "measure": "Federal funds"
+        },
+        {
+          "measure": "Community development funds"
+        },
+        {
+          "measure": "Small-business loans"
+        },
+        {
+          "measure": "Non-residential investment"
+        },
+        {
+          "measure": "Purchase loans (SF units)"
+        },
+        {
+          "measure": "Purchase loans (MF units)"
+        }
+      ]
+    },
+    {
+      "name": "data_2_color_domain_measure_1",
+      "values": [
+        {
+          "measure": "Aggregate investment"
+        },
+        {
+          "measure": "Federal funds"
+        },
+        {
+          "measure": "Community development funds"
+        },
+        {
+          "measure": "Small-business loans"
+        },
+        {
+          "measure": "Non-residential investment"
+        },
+        {
+          "measure": "Purchase loans (SF units)"
+        },
+        {
+          "measure": "Purchase loans (MF units)"
+        }
+      ]
+    }
+  ],
+  "height": 300,
+  "legends": [
+    {
+      "encode": {
+        "symbols": {
+          "update": {
+            "opacity": {
+              "value": 1
+            }
+          }
+        }
+      },
+      "fill": "color",
+      "stroke": "color",
+      "symbolType": "circle",
+      "title": "Investment Category"
+    }
+  ],
+  "marks": [
+    {
+      "encode": {
+        "update": {
+          "height": {
+            "field": {
+              "datum": null,
+              "group": "height",
+              "parent": null,
+              "signal": null
+            }
+          },
+          "width": {
+            "field": {
+              "datum": null,
+              "group": "width",
+              "parent": null,
+              "signal": null
+            }
+          }
+        }
+      },
+      "from": {
+        "facet": {
+          "data": "source_0",
+          "groupby": [
+            "measure"
+          ],
+          "name": "faceted_path_layer_0_main"
+        }
+      },
+      "marks": [
+        {
+          "encode": {
+            "update": {
+              "defined": {
+                "signal": "isValid(datum[\"year\"]) && isFinite(+datum[\"year\"]) && isValid(datum[\"inv_amount\"]) && isFinite(+datum[\"inv_amount\"])"
+              },
+              "stroke": {
+                "field": "measure",
+                "scale": "color"
+              },
+              "strokeWidth": {
+                "value": 2
+              },
+              "tooltip": {
+                "signal": "{\"Year\": timeFormat(datum[\"year\"], '%Y'), \"Investment Category\": isValid(datum[\"measure\"]) ? datum[\"measure\"] : \"\"+datum[\"measure\"], \"Amount (USD)\": format(datum[\"inv_amount\"], \",.2f\")}"
+              },
+              "x": {
+                "field": "year",
+                "scale": "x"
+              },
+              "y": {
+                "field": "inv_amount",
+                "scale": "y"
+              }
+            }
+          },
+          "from": {
+            "data": "faceted_path_layer_0_main"
+          },
+          "interactive": true,
+          "name": "layer_0_marks",
+          "sort": {
+            "field": "x"
+          },
+          "style": [
+            "line"
+          ],
+          "type": "line"
+        }
+      ],
+      "name": "layer_0_pathgroup",
+      "type": "group"
+    },
+    {
+      "encode": {
+        "update": {
+          "fill": {
+            "value": "transparent"
+          },
+          "opacity": {
+            "value": 0
+          },
+          "stroke": {
+            "value": "#4c78a8"
+          },
+          "x": {
+            "field": "year",
+            "scale": "x"
+          },
+          "y": {
+            "mult": 0.5,
+            "signal": "height"
+          }
+        }
+      },
+      "from": {
+        "data": "data_0"
+      },
+      "interactive": true,
+      "name": "view_6_marks",
+      "style": [
+        "point"
+      ],
+      "type": "symbol"
+    },
+    {
+      "encode": {
+        "update": {
+          "fill": {
+            "value": "transparent"
+          },
+          "isVoronoi": {
+            "value": true
+          },
+          "stroke": {
+            "value": "transparent"
+          },
+          "strokeWidth": {
+            "value": 0.35
+          }
+        }
+      },
+      "from": {
+        "data": "view_6_marks"
+      },
+      "interactive": true,
+      "name": "view_6_voronoi",
+      "transform": [
+        {
+          "size": [
+            {
+              "signal": "width"
+            },
+            {
+              "signal": "height"
+            }
+          ],
+          "type": "voronoi",
+          "x": {
+            "expr": "datum.datum.x || 0"
+          },
+          "y": {
+            "expr": "datum.datum.y || 0"
+          }
+        }
+      ],
+      "type": "path"
+    },
+    {
+      "encode": {
+        "update": {
+          "stroke": {
+            "value": "gray"
+          },
+          "strokeWidth": {
+            "value": 0.7
+          },
+          "x": {
+            "field": "year",
+            "scale": "x"
+          },
+          "y": {
+            "value": 0
+          },
+          "y2": {
+            "field": {
+              "datum": null,
+              "group": "height",
+              "parent": null,
+              "signal": null
+            }
+          }
+        }
+      },
+      "from": {
+        "data": "data_1"
+      },
+      "interactive": false,
+      "name": "layer_2_marks",
+      "style": [
+        "rule"
+      ],
+      "type": "rule"
+    },
+    {
+      "encode": {
+        "update": {
+          "fill": {
+            "field": "measure",
+            "scale": "color"
+          },
+          "opacity": [
+            {
+              "test": "length(data(\"param_9_store\")) && vlSelectionTest(\"param_9_store\", datum)",
+              "value": 1
+            },
+            {
+              "value": 0
+            }
+          ],
+          "size": {
+            "value": 100
+          },
+          "tooltip": {
+            "signal": "{\"Year\": timeFormat(datum[\"year\"], '%Y'), \"Investment Category\": isValid(datum[\"measure\"]) ? datum[\"measure\"] : \"\"+datum[\"measure\"], \"Amount (USD)\": format(datum[\"inv_amount\"], \",.2f\")}"
+          },
+          "x": {
+            "field": "year",
+            "scale": "x"
+          },
+          "y": {
+            "field": "inv_amount",
+            "scale": "y"
+          }
+        }
+      },
+      "from": {
+        "data": "data_2"
+      },
+      "interactive": true,
+      "name": "layer_3_marks",
+      "style": [
+        "point"
+      ],
+      "type": "symbol"
+    }
+  ],
+  "padding": 5,
+  "scales": [
+    {
+      "domain": {
+        "fields": [
+          {
+            "data": "source_0",
+            "field": "year"
+          },
+          {
+            "data": "data_0",
+            "field": "year"
+          },
+          {
+            "data": "data_1",
+            "field": "year"
+          },
+          {
+            "data": "data_2",
+            "field": "year"
+          }
+        ]
+      },
+      "name": "x",
+      "range": [
+        0,
+        {
+          "signal": "width"
+        }
+      ],
+      "type": "time"
+    },
+    {
+      "domain": {
+        "fields": [
+          {
+            "data": "source_0",
+            "field": "inv_amount"
+          },
+          {
+            "data": "data_2",
+            "field": "inv_amount"
+          }
+        ]
+      },
+      "name": "y",
+      "nice": true,
+      "range": [
+        {
+          "signal": "height"
+        },
+        0
+      ],
+      "type": "linear",
+      "zero": true
+    },
+    {
+      "domain": {
+        "fields": [
+          {
+            "data": "source_0_color_domain_measure_0",
+            "field": "measure"
+          },
+          {
+            "data": "data_2_color_domain_measure_1",
+            "field": "measure"
+          }
+        ],
+        "sort": true
+      },
+      "name": "color",
+      "range": [
+        "#7DB583",
+        "#3B5268",
+        "#FFC857",
+        "#E07B7B",
+        "#7BAEE0",
+        "#CE94E6",
+        "#E08D67"
+      ],
+      "type": "ordinal"
+    }
+  ],
+  "signals": [
+    {
+      "name": "unit",
+      "on": [
+        {
+          "events": "pointermove",
+          "update": "isTuple(group()) ? group() : unit"
+        }
+      ],
+      "value": {}
+    },
+    {
+      "name": "param_9",
+      "update": "vlSelectionResolve(\"param_9_store\", \"union\", true, true)"
+    },
+    {
+      "name": "param_9_tuple",
+      "on": [
+        {
+          "events": [
+            {
+              "markname": "view_6_voronoi",
+              "source": "scope",
+              "type": "click"
+            }
+          ],
+          "force": true,
+          "update": "datum && item().mark.marktype !== 'group' && indexof(item().mark.role, 'legend') < 0 ? {unit: \"view_6\", fields: param_9_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"year\"]]} : null"
+        },
+        {
+          "events": [
+            {
+              "source": "view",
+              "type": "dblclick"
+            }
+          ],
+          "update": "null"
+        }
+      ]
+    },
+    {
+      "name": "param_9_tuple_fields",
+      "value": [
+        {
+          "field": "year",
+          "type": "E"
+        }
+      ]
+    },
+    {
+      "name": "param_9_toggle",
+      "on": [
+        {
+          "events": [
+            {
+              "markname": "view_6_voronoi",
+              "source": "scope",
+              "type": "click"
+            }
+          ],
+          "update": "event.shiftKey"
+        },
+        {
+          "events": [
+            {
+              "source": "view",
+              "type": "dblclick"
+            }
+          ],
+          "update": "false"
+        }
+      ],
+      "value": false
+    },
+    {
+      "name": "param_9_modify",
+      "on": [
+        {
+          "events": {
+            "signal": "param_9_tuple"
+          },
+          "update": "modify(\"param_9_store\", param_9_toggle ? null : param_9_tuple, param_9_toggle ? null : true, param_9_toggle ? param_9_tuple : null)"
+        }
+      ]
+    }
+  ],
+  "style": "cell",
+  "width": 300
+}
