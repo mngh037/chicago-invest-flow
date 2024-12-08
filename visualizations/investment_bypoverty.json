@@ -1,0 +1,532 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "data": [
+    {
+      "name": "source_0",
+      "values": [
+        {
+          "facet_measure_sort_index": 6.0,
+          "inv_amount": 30042.28188,
+          "inv_amount_end": 30042.28188,
+          "inv_amount_start": 0.0,
+          "measure": "Aggregate investment per Household",
+          "poverty_cat": "0-11% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 6.0,
+          "inv_amount": 24950.29677,
+          "inv_amount_end": 24950.29677,
+          "inv_amount_start": 0.0,
+          "measure": "Aggregate investment per Household",
+          "poverty_cat": "12-20% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 6.0,
+          "inv_amount": 11774.00264,
+          "inv_amount_end": 11774.00264,
+          "inv_amount_start": 0.0,
+          "measure": "Aggregate investment per Household",
+          "poverty_cat": "21-31% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 6.0,
+          "inv_amount": 9208.963239,
+          "inv_amount_end": 9208.963239,
+          "inv_amount_start": 0.0,
+          "measure": "Aggregate investment per Household",
+          "poverty_cat": "Over 31% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 4.0,
+          "inv_amount": 124.8719385,
+          "inv_amount_end": 124.8719385,
+          "inv_amount_start": 0.0,
+          "measure": "Federal community development funds per Household",
+          "poverty_cat": "0-11% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 4.0,
+          "inv_amount": 419.0789277,
+          "inv_amount_end": 419.0789277,
+          "inv_amount_start": 0.0,
+          "measure": "Federal community development funds per Household",
+          "poverty_cat": "12-20% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 4.0,
+          "inv_amount": 202.7391625,
+          "inv_amount_end": 202.7391625,
+          "inv_amount_start": 0.0,
+          "measure": "Federal community development funds per Household",
+          "poverty_cat": "21-31% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 4.0,
+          "inv_amount": 626.0724506,
+          "inv_amount_end": 626.0724506,
+          "inv_amount_start": 0.0,
+          "measure": "Federal community development funds per Household",
+          "poverty_cat": "Over 31% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 5.0,
+          "inv_amount": 285.8928532,
+          "inv_amount_end": 285.8928532,
+          "inv_amount_start": 0.0,
+          "measure": "Community development funds per Household",
+          "poverty_cat": "0-11% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 5.0,
+          "inv_amount": 354.7498915,
+          "inv_amount_end": 354.7498915,
+          "inv_amount_start": 0.0,
+          "measure": "Community development funds per Household",
+          "poverty_cat": "12-20% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 5.0,
+          "inv_amount": 372.7502863,
+          "inv_amount_end": 372.7502863,
+          "inv_amount_start": 0.0,
+          "measure": "Community development funds per Household",
+          "poverty_cat": "21-31% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 5.0,
+          "inv_amount": 746.3381842,
+          "inv_amount_end": 746.3381842,
+          "inv_amount_start": 0.0,
+          "measure": "Community development funds per Household",
+          "poverty_cat": "Over 31% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 3.0,
+          "inv_amount": 5497.587148,
+          "inv_amount_end": 5497.587148,
+          "inv_amount_start": 0.0,
+          "measure": "Small-business loans per small business employee",
+          "poverty_cat": "0-11% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 3.0,
+          "inv_amount": 4681.40061,
+          "inv_amount_end": 4681.40061,
+          "inv_amount_start": 0.0,
+          "measure": "Small-business loans per small business employee",
+          "poverty_cat": "12-20% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 3.0,
+          "inv_amount": 4912.990695,
+          "inv_amount_end": 4912.990695,
+          "inv_amount_start": 0.0,
+          "measure": "Small-business loans per small business employee",
+          "poverty_cat": "21-31% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 3.0,
+          "inv_amount": 4212.866823,
+          "inv_amount_end": 4212.866823,
+          "inv_amount_start": 0.0,
+          "measure": "Small-business loans per small business employee",
+          "poverty_cat": "Over 31% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 2.0,
+          "inv_amount": 10295.4572,
+          "inv_amount_end": 10295.4572,
+          "inv_amount_start": 0.0,
+          "measure": "Non-residential investment per private employee",
+          "poverty_cat": "0-11% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 2.0,
+          "inv_amount": 7870.673271,
+          "inv_amount_end": 7870.673271,
+          "inv_amount_start": 0.0,
+          "measure": "Non-residential investment per private employee",
+          "poverty_cat": "12-20% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 2.0,
+          "inv_amount": 8832.221003,
+          "inv_amount_end": 8832.221003,
+          "inv_amount_start": 0.0,
+          "measure": "Non-residential investment per private employee",
+          "poverty_cat": "21-31% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 2.0,
+          "inv_amount": 8995.740492,
+          "inv_amount_end": 8995.740492,
+          "inv_amount_start": 0.0,
+          "measure": "Non-residential investment per private employee",
+          "poverty_cat": "Over 31% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 1.0,
+          "inv_amount": 23481.99782,
+          "inv_amount_end": 23481.99782,
+          "inv_amount_start": 0.0,
+          "measure": "Purchase loans per owner-occupied household",
+          "poverty_cat": "0-11% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 1.0,
+          "inv_amount": 15453.97988,
+          "inv_amount_end": 15453.97988,
+          "inv_amount_start": 0.0,
+          "measure": "Purchase loans per owner-occupied household",
+          "poverty_cat": "12-20% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 1.0,
+          "inv_amount": 8659.572084,
+          "inv_amount_end": 8659.572084,
+          "inv_amount_start": 0.0,
+          "measure": "Purchase loans per owner-occupied household",
+          "poverty_cat": "21-31% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 1.0,
+          "inv_amount": 6456.969636,
+          "inv_amount_end": 6456.969636,
+          "inv_amount_start": 0.0,
+          "measure": "Purchase loans per owner-occupied household",
+          "poverty_cat": "Over 31% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 0.0,
+          "inv_amount": 4637.490478,
+          "inv_amount_end": 4637.490478,
+          "inv_amount_start": 0.0,
+          "measure": "Purchase loans per renter-occupied household",
+          "poverty_cat": "0-11% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 0.0,
+          "inv_amount": 4737.263387,
+          "inv_amount_end": 4737.263387,
+          "inv_amount_start": 0.0,
+          "measure": "Purchase loans per renter-occupied household",
+          "poverty_cat": "12-20% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 0.0,
+          "inv_amount": 3271.672652,
+          "inv_amount_end": 3271.672652,
+          "inv_amount_start": 0.0,
+          "measure": "Purchase loans per renter-occupied household",
+          "poverty_cat": "21-31% Poverty"
+        },
+        {
+          "facet_measure_sort_index": 0.0,
+          "inv_amount": 2567.233211,
+          "inv_amount_end": 2567.233211,
+          "inv_amount_start": 0.0,
+          "measure": "Purchase loans per renter-occupied household",
+          "poverty_cat": "Over 31% Poverty"
+        }
+      ]
+    },
+    {
+      "name": "facet_domain",
+      "values": [
+        {
+          "facet_measure_sort_index": 6.0,
+          "measure": "Aggregate investment per Household"
+        },
+        {
+          "facet_measure_sort_index": 4.0,
+          "measure": "Federal community development funds per Household"
+        },
+        {
+          "facet_measure_sort_index": 5.0,
+          "measure": "Community development funds per Household"
+        },
+        {
+          "facet_measure_sort_index": 3.0,
+          "measure": "Small-business loans per small business employee"
+        },
+        {
+          "facet_measure_sort_index": 2.0,
+          "measure": "Non-residential investment per private employee"
+        },
+        {
+          "facet_measure_sort_index": 1.0,
+          "measure": "Purchase loans per owner-occupied household"
+        },
+        {
+          "facet_measure_sort_index": 0.0,
+          "measure": "Purchase loans per renter-occupied household"
+        }
+      ]
+    },
+    {
+      "name": "facet_domain_row",
+      "values": [
+        {
+          "data": 0.0
+        },
+        {
+          "data": 1.0
+        },
+        {
+          "data": 2.0
+        },
+        {
+          "data": 3.0
+        }
+      ]
+    },
+    {
+      "name": "facet_domain_column",
+      "transform": [
+        {
+          "start": 0.0,
+          "stop": {
+            "signal": "min(length(data(\"facet_domain\")), 2)"
+          },
+          "type": "sequence"
+        }
+      ]
+    },
+    {
+      "name": "source_0_y_domain_poverty_cat",
+      "values": [
+        {
+          "poverty_cat": "0-11% Poverty"
+        },
+        {
+          "poverty_cat": "12-20% Poverty"
+        },
+        {
+          "poverty_cat": "21-31% Poverty"
+        },
+        {
+          "poverty_cat": "Over 31% Poverty"
+        }
+      ]
+    }
+  ],
+  "layout": {
+    "align": "all",
+    "bounds": "full",
+    "columns": 2,
+    "padding": 20
+  },
+  "marks": [
+    {
+      "axes": [
+        {
+          "grid": false,
+          "orient": "left",
+          "scale": "y",
+          "zindex": 0
+        }
+      ],
+      "encode": {
+        "update": {
+          "height": {
+            "signal": "child_height"
+          }
+        }
+      },
+      "from": {
+        "data": "facet_domain_row"
+      },
+      "name": "row_header",
+      "role": "row-header",
+      "type": "group"
+    },
+    {
+      "axes": [
+        {
+          "grid": false,
+          "labelFlush": true,
+          "labelOverlap": true,
+          "orient": "bottom",
+          "scale": "x",
+          "tickCount": {
+            "signal": "ceil(child_width/40)"
+          },
+          "title": "Investment Amount (USD, per scalar unit)",
+          "zindex": 0
+        }
+      ],
+      "encode": {
+        "update": {
+          "width": {
+            "signal": "child_width"
+          }
+        }
+      },
+      "from": {
+        "data": "facet_domain_column"
+      },
+      "name": "column_footer",
+      "role": "column-footer",
+      "type": "group"
+    },
+    {
+      "axes": [
+        {
+          "aria": false,
+          "domain": false,
+          "grid": true,
+          "gridScale": "y",
+          "labels": false,
+          "maxExtent": 0,
+          "minExtent": 0,
+          "orient": "bottom",
+          "scale": "x",
+          "tickCount": {
+            "signal": "ceil(child_width/40)"
+          },
+          "ticks": false,
+          "zindex": 0
+        }
+      ],
+      "encode": {
+        "update": {
+          "height": {
+            "signal": "child_height"
+          },
+          "width": {
+            "signal": "child_width"
+          }
+        }
+      },
+      "from": {
+        "facet": {
+          "aggregate": {
+            "as": [
+              "facet_measure_sort_index"
+            ],
+            "fields": [
+              "facet_measure_sort_index"
+            ],
+            "ops": [
+              "max"
+            ]
+          },
+          "data": "source_0",
+          "groupby": [
+            "measure"
+          ],
+          "name": "facet"
+        }
+      },
+      "marks": [
+        {
+          "encode": {
+            "update": {
+              "fill": {
+                "value": "maroon"
+              },
+              "height": {
+                "signal": "max(0.25, bandwidth('y'))"
+              },
+              "tooltip": {
+                "signal": "{\"Investment Amount (USD)\": format(datum[\"inv_amount\"], \",.2f\")}"
+              },
+              "x": {
+                "field": "inv_amount_end",
+                "scale": "x"
+              },
+              "x2": {
+                "field": "inv_amount_start",
+                "scale": "x"
+              },
+              "y": {
+                "field": "poverty_cat",
+                "scale": "y"
+              }
+            }
+          },
+          "from": {
+            "data": "facet"
+          },
+          "name": "child_marks",
+          "style": [
+            "bar"
+          ],
+          "type": "rect"
+        }
+      ],
+      "name": "cell",
+      "sort": {
+        "field": [
+          "datum[\"facet_measure_sort_index\"]"
+        ],
+        "order": [
+          "ascending"
+        ]
+      },
+      "style": "cell",
+      "title": {
+        "frame": "group",
+        "offset": 10,
+        "style": "guide-label",
+        "text": {
+          "signal": "isValid(parent[\"measure\"]) ? parent[\"measure\"] : \"\"+parent[\"measure\"]"
+        }
+      },
+      "type": "group"
+    }
+  ],
+  "padding": 5,
+  "scales": [
+    {
+      "domain": {
+        "data": "source_0",
+        "fields": [
+          "inv_amount_start",
+          "inv_amount_end"
+        ]
+      },
+      "name": "x",
+      "nice": true,
+      "range": [
+        0,
+        {
+          "signal": "child_width"
+        }
+      ],
+      "type": "linear",
+      "zero": true
+    },
+    {
+      "domain": {
+        "data": "source_0_y_domain_poverty_cat",
+        "field": "poverty_cat",
+        "sort": true
+      },
+      "name": "y",
+      "paddingInner": 0.1,
+      "paddingOuter": 0.05,
+      "range": {
+        "step": {
+          "signal": "y_step"
+        }
+      },
+      "type": "band"
+    }
+  ],
+  "signals": [
+    {
+      "name": "child_width",
+      "value": 300
+    },
+    {
+      "name": "y_step",
+      "value": 20
+    },
+    {
+      "name": "child_height",
+      "update": "bandspace(domain('y').length, 0.1, 0.05) * y_step"
+    }
+  ]
+}
