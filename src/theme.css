@@ -1,0 +1,80 @@
+.menu {align-self: flex-start;
+    position: sticky;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* https://stackoverflow.com/questions/70800876/sticky-sidebar-not-working-tried-each-and-everything-from-stack-overflow */
+#sidebar .menu-label {font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    font-style: normal;
+    margin-bottom: 4px;
+}
+
+.title {color: maroon;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.subtitle {color: black;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    font-style: normal;
+}
+
+#body .heading1 {font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.text-body {
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 0.2px;
+    font-style: normal; 
+}
+
+input {
+    /* Ref: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio */
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+
+    position: relative;
+    top: 4px;
+}
+
+input:checked {
+    border: 6px solid maroon;
+}
+
+input, label {
+    display: flex;
+    margin-left: 15px;
+    line-height: 22px;
+}
+
+select, label {
+display: flex;
+margin-left: 0px;
+        line-height: 24px;
+}

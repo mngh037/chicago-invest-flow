@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <title>Chicago Investment Flows</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./src/theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -15,84 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
-
-  <style>
-    /* https://stackoverflow.com/questions/70800876/sticky-sidebar-not-working-tried-each-and-everything-from-stack-overflow */
-    .menu {align-self: flex-start;
-      position: sticky;
-      width: 200px;
-      top: 0;
-      bottom: 0;
-			font-family: "Oswald", sans-serif;
-			font-weight: 300;
-			font-size: 16px;
-		}
-
-		#sidebar .menu-label {font-family: "Bebas Neue", sans-serif;
-			font-weight: 100;
-			font-size: 18px;
-			font-style: normal;
-			margin-bottom: 4px;
-		}
-
-    .title {color: maroon;
-        font-family: "Oswald", sans-serif;
-        font-optical-sizing: auto;
-        font-size: 36px;
-        font-weight: 500;
-        font-style: normal;
-    }
-
-    .subtitle {color: black;
-        font-family: "Oswald", sans-serif;
-        font-optical-sizing: auto;
-        font-size: 20px;
-        font-weight: 300;
-        letter-spacing: 0.2px;
-        font-style: normal;
-    }
-
-    #body .heading1 {font-family: "Oswald", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-    }
-
-    .text-body {
-        color: black;
-        font-family: "Oswald", sans-serif;
-        font-optical-sizing: auto;
-        font-size: 20px;
-        font-weight: 200;
-        letter-spacing: 0.2px;
-        font-style: normal; 
-    }
-
-		input {
-			/* Ref: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio */
-			appearance: none;
-			border-radius: 50%;
-			width: 16px;
-			height: 16px;
-
-			border: 2px solid #999;
-			transition: 0.2s all linear;
-			margin-right: 5px;
-
-			position: relative;
-			top: 4px;
-		}
-
-		input:checked {
-			border: 6px solid maroon;
-		}
-
-		label {
-			display: flex;
-			margin-left: 15px;
-			line-height: 22px;
-		}
-
-  </style>
   
   <body>
   <section class="section" style="border: dotted black">
@@ -163,14 +86,29 @@
 				vegaEmbed("#invTrend", "https://raw.githubusercontent.com/mngh037/chicago-invest-flow/refs/heads/main/visualizations/trend.json");
 			</script>
 
-			<h2 class="heading1" id="point4">
-				Main point 4
+			<h2 class="heading1" id="point41">
+				Main point 4.1
 			</h2>
 			<p class="text-body">
 				Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.
 			</p>
 
+      <div id="invByRace"></div>
+			<script type="text/javascript">
+				vegaEmbed("#invByRace", "https://raw.githubusercontent.com/mngh037/chicago-invest-flow/refs/heads/main/visualizations/investment_byrace.json");
+			</script>
 
+      <h2 class="heading1" id="point42">
+        Main point 4.2
+      </h2>
+      <p class="text-body">
+        Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.
+      </p>
+
+      <div id="invByPov"></div>
+      <script type="text/javascript">
+        vegaEmbed("#invByPov", "https://raw.githubusercontent.com/mngh037/chicago-invest-flow/refs/heads/main/visualizations/investment_bypoverty.json");
+      </script>
 
 			<h2 class="heading1" id="point5">
 				Main point 5
