@@ -86,3 +86,16 @@ margin-left: 0px;
 .viz-mid {
     margin: auto
 }
+
+.hyperlink a:link {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.footer {
+    background-color: #F0F0F0;
+}
+
+hr {
+    margin-top: 30px; margin-bottom: -20px
+}
