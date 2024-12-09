@@ -528,5 +528,9 @@
       "name": "child_height",
       "update": "bandspace(domain('y').length, 0.1, 0.05) * y_step"
     }
-  ]
+  ],
+  "title": {
+    "anchor": "middle",
+    "text": "Chicago Average Scaled Investment by Tracts with Poverty Level (2010-2020)"
+  }
 }

@@ -764,7 +764,7 @@
       ]
     },
     {
-      "name": "param_47_store",
+      "name": "param_78_store",
       "values": [
         {
           "fields": [
@@ -773,7 +773,7 @@
               "type": "E"
             }
           ],
-          "unit": "view_36 + '__facet_row_' + (facet[\"race\"])",
+          "unit": "view_59 + '__facet_row_' + (facet[\"race\"])",
           "values": [
             "Aggregate investment per Household"
           ]
@@ -785,7 +785,7 @@
       "source": "_server_source_0",
       "transform": [
         {
-          "expr": "!length(data(\"param_47_store\")) || vlSelectionTest(\"param_47_store\", datum)",
+          "expr": "!length(data(\"param_78_store\")) || vlSelectionTest(\"param_78_store\", datum)",
           "type": "filter"
         },
         {
@@ -844,7 +844,7 @@
       "encode": {
         "update": {
           "height": {
-            "signal": "bandspace(datum[\"distinct_race_cat\"], 0.1, 0.05) * view_36_y_step"
+            "signal": "bandspace(datum[\"distinct_race_cat\"], 0.1, 0.05) * view_59_y_step"
           }
         }
       },
@@ -877,7 +877,7 @@
           "orient": "bottom",
           "scale": "x",
           "tickCount": {
-            "signal": "ceil(view_36_width/40)"
+            "signal": "ceil(view_59_width/40)"
           },
           "title": "Investment Amount (USD, per scalar unit)",
           "zindex": 0
@@ -886,7 +886,7 @@
       "encode": {
         "update": {
           "width": {
-            "signal": "view_36_width"
+            "signal": "view_59_width"
           }
         }
       },
@@ -900,14 +900,14 @@
           "aria": false,
           "domain": false,
           "grid": true,
-          "gridScale": "view_36_y",
+          "gridScale": "view_59_y",
           "labels": false,
           "maxExtent": 0,
           "minExtent": 0,
           "orient": "bottom",
           "scale": "x",
           "tickCount": {
-            "signal": "ceil(view_36_width/40)"
+            "signal": "ceil(view_59_width/40)"
           },
           "ticks": false,
           "zindex": 0
@@ -915,13 +915,13 @@
         {
           "grid": false,
           "orient": "left",
-          "scale": "view_36_y",
+          "scale": "view_59_y",
           "zindex": 0
         }
       ],
       "data": [
         {
-          "name": "facet_view_36_y_domain_race_cat_2",
+          "name": "facet_view_59_y_domain_race_cat_2",
           "source": "facet",
           "transform": [
             {
@@ -950,10 +950,10 @@
       "encode": {
         "update": {
           "height": {
-            "signal": "bandspace(datum[\"distinct_race_cat\"], 0.1, 0.05) * view_36_y_step"
+            "signal": "bandspace(datum[\"distinct_race_cat\"], 0.1, 0.05) * view_59_y_step"
           },
           "width": {
-            "signal": "view_36_width"
+            "signal": "view_59_width"
           }
         }
       },
@@ -985,7 +985,7 @@
                 "value": "maroon"
               },
               "height": {
-                "signal": "max(0.25, bandwidth('view_36_y'))"
+                "signal": "max(0.25, bandwidth('view_59_y'))"
               },
               "tooltip": {
                 "signal": "{\"Investment Amount (USD)\": format(datum[\"inv_amount\"], \",.2f\")}"
@@ -1000,7 +1000,7 @@
               },
               "y": {
                 "field": "race_cat",
-                "scale": "view_36_y"
+                "scale": "view_59_y"
               }
             }
           },
@@ -1008,7 +1008,7 @@
             "data": "facet"
           },
           "interactive": true,
-          "name": "view_36_marks",
+          "name": "view_59_marks",
           "style": [
             "bar"
           ],
@@ -1019,16 +1019,16 @@
       "scales": [
         {
           "domain": {
-            "data": "facet_view_36_y_domain_race_cat_2",
+            "data": "facet_view_59_y_domain_race_cat_2",
             "field": "race_cat",
             "sort": true
           },
-          "name": "view_36_y",
+          "name": "view_59_y",
           "paddingInner": 0.1,
           "paddingOuter": 0.05,
           "range": {
             "step": {
-              "signal": "view_36_y_step"
+              "signal": "view_59_y_step"
             }
           },
           "type": "band"
@@ -1051,11 +1051,11 @@
           "value": {}
         },
         {
-          "name": "param_47_tuple",
-          "update": "param_47_measure !== null ? {fields: param_47_tuple_fields, values: [param_47_measure]} : null"
+          "name": "param_78_tuple",
+          "update": "param_78_measure !== null ? {fields: param_78_tuple_fields, values: [param_78_measure]} : null"
         },
         {
-          "name": "param_47_tuple_fields",
+          "name": "param_78_tuple_fields",
           "value": [
             {
               "field": "measure",
@@ -1064,13 +1064,13 @@
           ]
         },
         {
-          "name": "param_47_modify",
+          "name": "param_78_modify",
           "on": [
             {
               "events": {
-                "signal": "param_47_tuple"
+                "signal": "param_78_tuple"
               },
-              "update": "modify(\"param_47_store\", param_47_tuple, true)"
+              "update": "modify(\"param_78_store\", param_78_tuple, true)"
             }
           ]
         }
@@ -1102,7 +1102,7 @@
       "range": [
         0,
         {
-          "signal": "view_36_width"
+          "signal": "view_59_width"
         }
       ],
       "type": "linear",
@@ -1111,11 +1111,11 @@
   ],
   "signals": [
     {
-      "name": "view_36_width",
+      "name": "view_59_width",
       "value": 300
     },
     {
-      "name": "view_36_y_step",
+      "name": "view_59_y_step",
       "value": 20
     },
     {
@@ -1133,20 +1133,24 @@
         "input": "radio",
         "name": "Investment Category ",
         "options": [
+          "Community development funds per Household",
           "Aggregate investment per Household",
           "Purchase loans per owner-occupied household",
-          "Small-business loans per small business employee",
           "Purchase loans per renter-occupied household",
-          "Community development funds per Household",
+          "Small-business loans per small business employee",
           "Non-residential investment per private employee"
         ]
       },
       "init": "\"Aggregate investment per Household\"",
-      "name": "param_47_measure"
+      "name": "param_78_measure"
     },
     {
-      "name": "param_47",
-      "update": "vlSelectionResolve(\"param_47_store\", \"union\", true, true)"
+      "name": "param_78",
+      "update": "vlSelectionResolve(\"param_78_store\", \"union\", true, true)"
     }
-  ]
+  ],
+  "title": {
+    "anchor": "start",
+    "text": "Chicago Average Scaled Investment by Tracts with Race Majority (2010-2020)"
+  }
 }

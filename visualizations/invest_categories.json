@@ -157,5 +157,10 @@
     }
   ],
   "style": "view",
+  "title": {
+    "anchor": "middle",
+    "frame": "group",
+    "text": "Chicago Total Investment by Category (2010-2020)"
+  },
   "width": 300
 }
