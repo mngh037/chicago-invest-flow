@@ -78,3 +78,11 @@ display: flex;
 margin-left: 0px;
         line-height: 24px;
 }
+
+.viz-right {
+    text-align: right
+}
+
+.viz-mid {
+    margin: auto
+}
