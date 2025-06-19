@@ -1,5 +1,5 @@
 # Chicago Invest Flow
-**Chicago Investment Flow Project: Where does the money go?**
+[**Chicago Investment Flow Project: Where does the money go?**](https://mngh037.github.io/chicago-invest-flow/)
 
 CAPP 30239 Interactive Visualization Capstone Project - Minh Nghiem
 
